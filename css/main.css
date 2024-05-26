@@ -172,7 +172,6 @@ svg * {
 }
 
 body {
-  font-family: var(--font-family);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -181,6 +180,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-x: hidden;
+  font-family: var(--font-family);
 }
 
 .main {
@@ -197,13 +197,13 @@ body {
 
 .visually-hidden {
   position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  border: 0;
 }
 
 .section-title {
@@ -214,6 +214,29 @@ body {
 .section-description {
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
   line-height: 1.43;
+}
+
+.button {
+  height: 88px;
+  padding-inline: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: #FED84C;
+  color: #2E363E;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.52;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #01B713;
+}
+
+.button:active {
+  scale: 1.04;
 }
 
 .feedback {
