@@ -1,18 +1,61 @@
 .author {
 }
 .author__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 18px;
 }
 .container {
 }
 .author__content {
 }
+.author__description{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 37px;
+    margin-bottom: 24px;
+    padding-inline: 18px;
+    background-color: #F2F6FA;
+    color: #2e363e;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
 .author__title {
+    max-width: 580px;
+    margin-bottom: 36px;
+    font-weight: 500;
+    font-size: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
+    line-height: 3.75rem;
 }
 .author__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    max-width: 438px;
+    margin-bottom: 50px;
 }
 .author__item {
+    position: relative;
+    padding-left: 22px;
+    color: #2E363E;
+    font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
 }
-.author__button {
+.author__item::before{
+    content: "";
+    position: absolute;
+    background-image: url('./../img/author/list-item-bullet.svg');
+    background-position: center center; /* x y */
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 10px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
 }
 .author__image {
 }
