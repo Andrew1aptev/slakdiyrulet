@@ -244,6 +244,11 @@ body {
     font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
   }
 }
+.catalog__title {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
 .catalog__wrapper {
   --gap: 20px;
   --elements: 3;
@@ -277,11 +282,14 @@ body {
   }
 }
 .catalog__card-title {
+  font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
+  font-weight: 600;
   margin-bottom: 12px;
   padding-top: 50px;
 }
 
 .catalog__card-description {
+  font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
   margin-bottom: 24px;
 }
 
@@ -301,6 +309,13 @@ body {
     padding-top: 25px;
   }
 }
+.catalog__card-button {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.52;
+  font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+}
+
 .photo {
   padding-top: 439px;
   padding-bottom: 459px;
