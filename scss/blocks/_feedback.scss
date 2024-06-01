@@ -64,7 +64,7 @@
 }
 .swiper-backface-hidden 
 .swiper-slide.swiper-slide-active{
-    scale: 1.25;
+    transform: scale(1.25);
     position: relative;
 }
 .swiper-backface-hidden 
@@ -99,7 +99,6 @@
     flex-direction: column;
     row-gap: 24px;
     justify-content: center;
-    align-items: left;
     max-width: 364px;
 }
 .feedback__slide-leftside::before{

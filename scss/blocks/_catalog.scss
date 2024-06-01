@@ -1,6 +1,9 @@
-.catalog__title{
-    text-align: center;
+.catalog__text{
     margin-bottom: 80px;
+    font-weight: 500;
+    font-size: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
+    line-height: 3.75rem;
+    text-align: center;
 }
 .catalog__wrapper {
     --gap: 20px;
@@ -10,18 +13,18 @@
     gap: var(--gap);
 }
 .catalog__card {
-    width: calc((100% - (var(--elements) - 1) * var(--gap)) / (var(--elements)) );
+    width: calc((100% - (var(--elements) - 1) * var(--gap)) / (var(--elements)));
     min-height: 582px;
 }
 .catalog__card-title {
-    font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
-    font-weight: 600;
     margin-bottom: 12px;
     padding-top: 50px;
+    font-weight: 600;
+    font-size: clamp(1.25rem, 1.2rem + 0.25vw, 1.5rem);
 }
 .catalog__card-description {
-    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
     margin-bottom: 24px;
+    font-size: clamp(0.875rem, 0.85rem + 0.125vw, 1rem);
 }
 .catalog__card-price {
     margin-bottom: 14px;
@@ -36,8 +39,8 @@
 .catalog__card-button {
     font-weight: 500;
     font-size: 18px;
-    line-height: 1.52;
     font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+    line-height: 1.52;
 }
 
 @media only screen and (max-width: 1024px) {
