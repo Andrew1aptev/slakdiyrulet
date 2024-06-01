@@ -1,7 +1,7 @@
 .photo{
     padding-top: 439px;
     padding-bottom: 459px;
-    background-color: #081130;
+    background-color: var(--blue-dark-color);
     position: relative;
     background-image: url('./../img/photo/bg-photo.png');
     background-position: center center; /* x y */
@@ -10,24 +10,10 @@
     width: 100%;
     overflow: hidden;
 }
-@media only screen and (max-width: 1600px) {
-    .photo{
-        padding-top: 300px;
-        padding-bottom: 350px;
-    }
-}
 .photo__container {
     display: flex;
     justify-content: end;
     position: relative;
-}
-@media only screen and (max-width: 1023px) {
-    .photo__container{
-        justify-content: center;
-    }
-}
-.photo__container{
-
 }
 .photo::before{
     content: "";
@@ -40,24 +26,6 @@
     width: 980px;
     height: 1019px;
     bottom: 0px;
-}
-@media only screen and (max-width: 1750px) {
-    .photo::before{
-        width: 690px;
-        height: 750px;
-    }
-}
-@media only screen and (max-width: 1279px) {
-    .photo::before{
-        width: 500px;
-        height: 540px;
-    }
-}
-@media only screen and (max-width: 1023px) {
-    .photo::before{
-        width: 270px;
-        height: 300px;
-    }
 }
 .photo__content {
     display: flex;
@@ -79,16 +47,11 @@
     width: 207px;
     height: 177px;
 }
-@media only screen and (max-width: 1023px) {
-    .photo__content{
-        align-items: center;
-    }
-}
 .photo__description {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    background-color: #F2F6FA;
+    background-color: var(--gray-light-color);
     padding: 0px 18px;
     border-radius: 5px;
     height: 37px;
@@ -97,21 +60,22 @@
     line-height: 150%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #2e363e;
+}
+.photo__title,
+.photo__text{
+    color: var(--white-color);
 }
 .photo__title {
     font-weight: 500;
     font-size: clamp(1.875rem, 1.65rem + 1.125vw, 3rem);
     line-height: 1.25;
     letter-spacing: -0.02em;
-    color: #fff;
 }
 .photo__text {
     font-weight: 400;
     font-size: clamp(0.875rem, 0.7875rem + 0.4375vw, 1.3125rem);
     line-height: 143%;
     letter-spacing: -0.01em;
-    color: #fff;
     margin-bottom: 16px;
 }
 @media only screen and (max-width: 1023px) {
@@ -123,7 +87,34 @@
     font-weight: 500;
     line-height: 1.52;
     text-align: center;
-    color: #2e363e; 
 }
-.button {
+@media only screen and (max-width: 1750px) {
+    .photo::before{
+        width: 690px;
+        height: 750px;
+    }
+}
+@media only screen and (max-width: 1600px) {
+    .photo{
+        padding-top: 300px;
+        padding-bottom: 350px;
+    }
+}
+@media only screen and (max-width: 1279px) {
+    .photo::before{
+        width: 500px;
+        height: 540px;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .photo__container{
+        justify-content: center;
+    }
+    .photo::before{
+        width: 270px;
+        height: 300px;
+    }
+    .photo__content{
+        align-items: center;
+    }
 }

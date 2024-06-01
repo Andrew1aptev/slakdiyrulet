@@ -1,96 +1,87 @@
 .header {
     padding-top: 39px;
     padding-bottom: 465px;
-    background-color: #999;
     background-image: url('./../img/hero/bg.png');
     background-position: center center; /* x y */
     background-size: cover;
     background-repeat: no-repeat;
-}
-@media only screen and (max-width: 1024px) {
-    .header {
-        padding-bottom: 220px;
-    }
 }
 .header__top {
     display: flex;
     justify-content: space-between;
     margin-bottom: 227px;
 }
-@media only screen and (max-width: 1024px) {
-    .header__top{
-        flex-direction: column;
-        row-gap: 20px;
-        margin-bottom: 110px;
-    }
-}
-.logo {
-}
 .logo__link {
     font-weight: 500;
     font-size: 21px;
     line-height: 143%;
-    color: #fff;
     text-decoration: none;
+}
+.logo__link,
+.header__map-link,
+.header__phone-link,
+.header__phone-description,
+.header__title,
+.header__description,
+.header__text{
+    color: var(--white-color);
+}
+.logo__link,
+.header__map-link,
+.header__phone-link{
+    transition: color .2s ease;
+}
+.logo__link:hover,
+.header__map-link:hover,
+.header__phone-link:hover{
+    color: var(--yellow-color);
 }
 .header__utils {
     display: flex;
     column-gap: 69px;
 }
-@media only screen and (max-width: 1024px) {
-    .header__utils {
-        padding-left: 30px;
-        flex-direction: column;
-        row-gap: 20px;
-    }
-}
 .header__map-link {
-    font-size: 12px;
-    font-weight: 400;
-    max-width: 151px;
-    text-decoration: none;
-    color: #FFFFFF;
     position: relative;
+    max-width: 151px;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
 }
 .header__map-link::before{
     content: "";
     position: absolute;
+    top: 2px;
+    left: -30px;
+    width: 17px;
+    height: 23px;
     background-image: url('./../../img/hero/map-icon.svg');
     background-position: center center; /* x y */
     background-size: cover;
     background-repeat: no-repeat;
-    width: 17px;
-    height: 23px;
-    left: -30px;
-    top: 2px;
-}
-.header__phone {
 }
 .header__phone-link {
+    position: relative;
     font-weight: 700;
     font-size: 20px;
     line-height: 152%;
-    color: #fff;
     text-decoration: none;
-    position: relative;
 }
 .header__phone-link::before{
     content: "";
     position: absolute;
+    top: 2px;
+    left: -30px;
+    width: 19px;
+    height: 19px;
     background-image: url('./../../img/hero/phone-icon.svg');
     background-position: center center; /* x y */
     background-size: cover;
     background-repeat: no-repeat;
-    width: 19px;
-    height: 19px;
-    left: -30px;
-    top: 2px;
 }
 .header__phone-description {
     font-weight: 400;
     font-size: 13px;
     line-height: 150%;
-    color: #fff;
 }
 .header__content {
     display: flex;
@@ -106,8 +97,8 @@
     height: 37px;
     padding-inline: 18px;
     border-radius: 5px;
-    background-color: #F2F6FA;
-    color: #2e363e;
+    background-color: var(--gray-light-color);
+    color: var(--black-color);
     font-weight: 400;
     font-size: 11px;
     line-height: 150%;
@@ -115,37 +106,48 @@
     text-transform: uppercase;
 }
 .header__title {
-    color: white;
     font-size: clamp(1.5rem, 1.2rem + 1.5vw, 3rem);
 }
 .header__description {
     max-width: 544px;
     margin-bottom: 16px;
-    color: white;
     font-weight: 400;
     font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
 }
 .header__content-row {
     display: flex;
-    align-items: start;
     gap: 20px;
-}
-@media only screen and (max-width: 1024px) {
-    .header__content-row{
-        
-        flex-direction: column;
-    }
+    align-items: center;
 }
 .header__button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
     font-size: clamp(0.875rem, 0.825rem + 0.25vw, 1.125rem);
+    text-decoration: none;
 }
 .header__text {
-    color: #fff;
     font-weight: 400;
     font-size: 15px;
     line-height: 160%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        padding-bottom: 220px;
+    }
+    .header__top{
+        flex-direction: column;
+        row-gap: 20px;
+        margin-bottom: 110px;
+    }
+    .header__utils {
+        flex-direction: column;
+        row-gap: 20px;
+        padding-left: 30px;
+    }
+    .header__content-row{
+        align-items: start;
+        flex-direction: column;
+    }
 }
