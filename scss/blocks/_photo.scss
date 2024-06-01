@@ -1,120 +1,121 @@
-.photo{
-    padding-top: 439px;
-    padding-bottom: 459px;
-    background-color: var(--blue-dark-color);
-    position: relative;
-    background-image: url('./../img/photo/bg-photo.png');
-    background-position: center center; /* x y */
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    overflow: hidden;
+.photo {
+  padding-top: 439px;
+  padding-bottom: 459px;
+  background-color: var(--blue-dark-color);
+  position: relative;
+  background-image: url("./../img/photo/bg-photo.webp");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
 }
 .photo__container {
-    display: flex;
-    justify-content: end;
-    position: relative;
+  display: flex;
+  justify-content: end;
+  position: relative;
 }
-.photo::before{
-    content: "";
-    background-image: url('./../img/photo/hand.png');
-    background-position: center center; /* x y */
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0px;
-    width: 980px;
-    height: 1019px;
-    bottom: 0px;
+.photo::before {
+  content: "";
+  background-image: url("./../img/photo/hand.webp");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+  width: 980px;
+  height: 1019px;
+  bottom: 0px;
 }
 .photo__content {
-    display: flex;
-    flex-direction: column;
-    max-width: 481px;
-    row-gap: 24px;
-    align-items: flex-start;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 481px;
+  row-gap: 24px;
+  align-items: flex-start;
+  position: relative;
 }
-.photo__content::after{
-    content: "";
-    background-image: url('./../img/photo/berry.png');
-    background-position: center center; /* x y */
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    right: -216px;
-    top: -119px;
-    width: 207px;
-    height: 177px;
+.photo__content::after {
+  content: "";
+  background-image: url("./../img/photo/berry.png");
+  background-position: center center; /* x y */
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -216px;
+  top: -119px;
+  width: 207px;
+  height: 177px;
 }
 .photo__description {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--gray-light-color);
-    padding: 0px 18px;
-    border-radius: 5px;
-    height: 37px;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 150%;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray-light-color);
+  padding: 0px 18px;
+  border-radius: 5px;
+  height: 37px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 150%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 .photo__title,
-.photo__text{
-    color: var(--white-color);
+.photo__text {
+  color: var(--white-color);
 }
 .photo__title {
-    font-weight: 500;
-    font-size: clamp(1.875rem, 1.65rem + 1.125vw, 3rem);
-    line-height: 1.25;
-    letter-spacing: -0.02em;
+  font-weight: 500;
+  font-size: clamp(1.875rem, 1.65rem + 1.125vw, 3rem);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
 }
 .photo__text {
-    font-weight: 400;
-    font-size: clamp(0.875rem, 0.7875rem + 0.4375vw, 1.3125rem);
-    line-height: 143%;
-    letter-spacing: -0.01em;
-    margin-bottom: 16px;
+  font-weight: 400;
+  font-size: clamp(0.875rem, 0.7875rem + 0.4375vw, 1.3125rem);
+  line-height: 143%;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
 }
 @media only screen and (max-width: 1023px) {
-    .photo__title, .photo__text{
-        text-align: center;
-    }
+  .photo__title,
+  .photo__text {
+    text-align: center;
+  }
 }
 .photo__button {
-    font-weight: 500;
-    line-height: 1.52;
-    text-align: center;
+  font-weight: 500;
+  line-height: 1.52;
+  text-align: center;
 }
 @media only screen and (max-width: 1750px) {
-    .photo::before{
-        width: 690px;
-        height: 750px;
-    }
+  .photo::before {
+    width: 690px;
+    height: 750px;
+  }
 }
 @media only screen and (max-width: 1600px) {
-    .photo{
-        padding-top: 300px;
-        padding-bottom: 350px;
-    }
+  .photo {
+    padding-top: 300px;
+    padding-bottom: 350px;
+  }
 }
 @media only screen and (max-width: 1279px) {
-    .photo::before{
-        width: 500px;
-        height: 540px;
-    }
+  .photo::before {
+    width: 500px;
+    height: 540px;
+  }
 }
 @media only screen and (max-width: 1023px) {
-    .photo__container{
-        justify-content: center;
-    }
-    .photo::before{
-        width: 270px;
-        height: 300px;
-    }
-    .photo__content{
-        align-items: center;
-    }
+  .photo__container {
+    justify-content: center;
+  }
+  .photo::before {
+    width: 270px;
+    height: 300px;
+  }
+  .photo__content {
+    align-items: center;
+  }
 }

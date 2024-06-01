@@ -1,304 +1,459 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Сладкий рулет</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Сладкий рулет</title>
-</head>
-
-<body>
-  <header class="header">
-    <div class="header__container container">
-      <div class="header__top">
-        <div class="logo">
-          <a href="#!" class="logo__link">Сладкий сундук</a>
-  
-        </div>
-        <div class="header__utils">
-          <a href="#!" class="header__map-link">г. Санкт Петербург, ул. Куйбышева 31</a>
-          <div class="header__phone">
-            <a href="tel:88128449549" class="header__phone-link">8 (812) 844-95-49</a>
-            <p class="header__phone-description">Ежедневно с 9:00 до 20:00</p>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__top">
+          <div class="logo">
+            <a href="#!" class="logo__link">Сладкий сундук</a>
           </div>
-        </div>
-      </div>
-      <div class="header__content">
-        <div class="header__decoration">вкуснейшие</div>
-        <h1 class="header__title">Пирожные и капкейки от 150 ₽/шт. с доставкой по Санкт Петербургу</h1>
-        <p class="header__description">Приготовим за 3 часа в день заказа. 
-          Доставка на авто в холодильнике.</p>
-        <div class="header__content-row">
-          <a href="#!" class="header__button button">Перейти в каталог</a>
-          <p class="header__text">9 различных<br>видов на выбор</p>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="main">
-    <section class="catalog">
-      <div class="container">
-        <h2 class="catalog__title visually-hidden">Каталог наших капкейков</h2>
-        <div class="catalog__text">Для любых событий и дорогих вам людей</div>
-        <div class="catalog__wrapper">
-          <div class="catalog__card">
-            <img src="./img/catalog/photo-1.png" alt="фото пироженого Кремовый замок" class="catalog__card-img">
-            <h3 class="catalog__card-title">Кремовый замок</h3>
-            <p class="catalog__card-description">Нежный крем любого цвета на выбор, вафельная основа</p>
-            <p class="catalog__card-price">150 ₽/шт.</p>
-            <button class="catalog__card-button button">Заказать</button>
-          </div>
-          <div class="catalog__card">
-            <img src="./img/catalog/photo-2.png" alt="фото пироженого Кремовый замок" class="catalog__card-img">
-            <h3 class="catalog__card-title">Кремовый замок</h3>
-            <p class="catalog__card-description">Нежный крем любого цвета на выбор, вафельная основа</p>
-            <p class="catalog__card-price">150 ₽/шт.</p>
-            <button class="catalog__card-button button">Заказать</button>
-          </div>
-          <div class="catalog__card">
-            <img src="./img/catalog/photo-3.png" alt="фото пироженого Кремовый замок" class="catalog__card-img">
-            <h3 class="catalog__card-title">Кремовый замок</h3>
-            <p class="catalog__card-description">Нежный крем любого цвета на выбор, вафельная основа</p>
-            <p class="catalog__card-price">150 ₽/шт.</p>
-            <button class="catalog__card-button button">Заказать</button>
-          </div>
-          <div class="catalog__card">
-            <img src="./img/catalog/photo-4.png" alt="фото пироженого Кремовый замок" class="catalog__card-img">
-            <h3 class="catalog__card-title">Кремовый замок</h3>
-            <p class="catalog__card-description">Нежный крем любого цвета на выбор, вафельная основа</p>
-            <p class="catalog__card-price">150 ₽/шт.</p>
-            <button class="catalog__card-button button">Заказать</button>
-          </div>
-          <div class="catalog__card">
-            <img src="./img/catalog/photo-5.png" alt="фото пироженого Кремовый замок" class="catalog__card-img">
-            <h3 class="catalog__card-title">Кремовый замок</h3>
-            <p class="catalog__card-description">Нежный крем любого цвета на выбор, вафельная основа</p>
-            <p class="catalog__card-price">150 ₽/шт.</p>
-            <button class="catalog__card-button button">Заказать</button>
-          </div>
-          <div class="catalog__card">
-            <img src="./img/catalog/photo-6.png" alt="фото пироженого Кремовый замок" class="catalog__card-img">
-            <h3 class="catalog__card-title">Кремовый замок</h3>
-            <p class="catalog__card-description">Нежный крем любого цвета на выбор, вафельная основа</p>
-            <p class="catalog__card-price">150 ₽/шт.</p>
-            <button class="catalog__card-button button">Заказать</button>
-          </div>
-          <div class="catalog__card">
-            <img src="./img/catalog/photo-7.png" alt="фото пироженого Кремовый замок" class="catalog__card-img">
-            <h3 class="catalog__card-title">Кремовый замок</h3>
-            <p class="catalog__card-description">Нежный крем любого цвета на выбор, вафельная основа</p>
-            <p class="catalog__card-price">150 ₽/шт.</p>
-            <button class="catalog__card-button button">Заказать</button>
-          </div>
-          <div class="catalog__card">
-            <img src="./img/catalog/photo-8.png" alt="фото пироженого Кремовый замок" class="catalog__card-img">
-            <h3 class="catalog__card-title">Кремовый замок</h3>
-            <p class="catalog__card-description">Нежный крем любого цвета на выбор, вафельная основа</p>
-            <p class="catalog__card-price">150 ₽/шт.</p>
-            <button class="catalog__card-button button">Заказать</button>
-          </div>
-          <div class="catalog__card">
-            <img src="./img/catalog/photo-9.png" alt="фото пироженого Кремовый замок" class="catalog__card-img">
-            <h3 class="catalog__card-title">Кремовый замок</h3>
-            <p class="catalog__card-description">Нежный крем любого цвета на выбор, вафельная основа</p>
-            <p class="catalog__card-price">150 ₽/шт.</p>
-            <button class="catalog__card-button button">Заказать</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="photo">
-      <div class="photo__container container">
-        <div class="photo__content">
-          <div class="photo__description">не нашли то что нужно?</div>
-          <h2 class="photo__title">Приготовим заказ любой сложности по фото или эскизу</h2>
-          <p class="photo__text">Загрузите фотографию или эскиз капкейков и мы рассчитаем стоимость за 30 минут</p>
-          <button class="photo__button button">Загрузить фотографию</button>
-        </div>
-      </div>
-    </section>
-    <section class="author">
-      <div class="author__container container">
-        <h2 class="author__title visually-hidden">Кто будет готовить?</h2>
-        <div class="author__content">
-          <span class="author__description">Кто будет готовить?</span>
-          <h3 class="author__title">Лично приготовлю<br>и всё красиво упакую для вашего события</h3>
-          <ul class="author__list">
-            <li class="author__item">Проконсультирую по выбору капкейков<br>и придумаю нестандартную идею</li>
-            <li class="author__item">Приготовлю капкейки для вашего события, которые обязательно всем понравятся </li>
-            <li class="author__item">Аккуратно и красиво всё упакую, если вы хотите сделать приятный подарок</li>
-          </ul>
-          <button class="author__button button">
-            Задать вопрос Юлии
-          </button>
-        </div>
-        <div class="author__image-wrapper">
-          <img src="./img/author/author-photo.png" alt="photo of the pastry chef" class="author__image">
-        </div>
-      </div>
-    </section>
-    <section class="feedback">
-      <div class="slider-container">
-        <h2 class="section-title feedback__title">Почитайте отзывы довольных клиентов</h2>
-        <div class="swiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide feedback__slide">
-              <div class="feedback__slide-leftside">
-                <h3 class="feedback__slide-title">
-                  «Результат дико порадовал, друзья были в восторге»
-                </h3>
-                <p class="feedback__slide-text">
-                  «Заказала капкейки, как подарок на новый год. Делать заказ было легко и приятно, ну а результат дико
-                  порадовал, друзья были в восторге. И оформление, и на вкус капкейки были просто замечательные.
-                  Обязательно буду заказывать еще)) Уже строю планы, чтобы попробовать все начинки. Они восхитительны!)
-                  Даже кушать было жалко, такая красота!)
-                </p>
-                <a href="#!" class="feedback__slide-link">
-                  Читать отзыв полностью
-                </a>
-              </div>
-              <div class="feedback__slide-rightside">
-                <img src="./img/feedback/photo-1.png" alt="Irina Larionova photo" class="feedback__slide-photo">
-                <span class="feedback__slide-name">Ирина Ларионова</span>
-                <span class="feedback__slide-city">Санкт-Петербург</span>
-              </div>
-            </div>
-            <div class="swiper-slide feedback__slide">
-              <div class="feedback__slide-leftside">
-                <h3 class="feedback__slide-title">
-                  «Результат дико порадовал, друзья были в восторге»
-                </h3>
-                <p class="feedback__slide-text">
-                  «Вставьте отзыв целиком или часть отзыва клиента. Никогда не выдумывайте отзывы самостоятельно.
-                  Фильшивые отзывы всегда видно. Будьте честны.
-                </p>
-                <p class="feedback__slide-text">
-                  Опишите конечный результат, который получил человек после работы с вами. Что конеретно ему это дало.
-                  Можно описывать результат в цифрах, чтобы была конкретика»
-                </p>
-                <a href="#!" class="feedback__slide-link">
-                  Читать отзыв полностью
-                </a>
-              </div>
-              <div class="feedback__slide-rightside">
-                <img src="./img/feedback/photo-1.png" alt="Irina Larionova photo" class="feedback__slide-photo">
-                <span class="feedback__slide-name">Ирина Ларионова</span>
-                <span class="feedback__slide-city">Санкт-Петербург</span>
-              </div>
-            </div>
-            <div class="swiper-slide feedback__slide">
-              <div class="feedback__slide-leftside">
-                <h3 class="feedback__slide-title">
-                  «Результат дико порадовал, друзья были в восторге»
-                </h3>
-                <p class="feedback__slide-text">
-                  «Вставьте отзыв целиком или часть отзыва клиента. Никогда не выдумывайте отзывы самостоятельно.
-                  Фильшивые отзывы всегда видно. Будьте честны.
-                </p>
-                <p class="feedback__slide-text">
-                  Опишите конечный результат, который получил человек после работы с вами. Что конеретно ему это дало.
-                  Можно описывать результат в цифрах, чтобы была конкретика»
-                </p>
-                <a href="#!" class="feedback__slide-link">
-                  Читать отзыв полностью
-                </a>
-              </div>
-              <div class="feedback__slide-rightside">
-                <img src="./img/feedback/photo-1.png" alt="Irina Larionova photo" class="feedback__slide-photo">
-                <span class="feedback__slide-name">Ирина Ларионова</span>
-                <span class="feedback__slide-city">Санкт-Петербург</span>
-              </div>
-            </div>
-            <div class="swiper-slide feedback__slide">
-              <div class="feedback__slide-leftside">
-                <h3 class="feedback__slide-title">
-                  «Результат дико порадовал, друзья были в восторге»
-                </h3>
-                <p class="feedback__slide-text">
-                  «Вставьте отзыв целиком или часть отзыва клиента. Никогда не выдумывайте отзывы самостоятельно.
-                  Фильшивые отзывы всегда видно. Будьте честны.
-                </p>
-                <p class="feedback__slide-text">
-                  Опишите конечный результат, который получил человек после работы с вами. Что конеретно ему это дало.
-                  Можно описывать результат в цифрах, чтобы была конкретика»
-                </p>
-                <a href="#!" class="feedback__slide-link">
-                  Читать отзыв полностью
-                </a>
-              </div>
-              <div class="feedback__slide-rightside">
-                <img src="./img/feedback/photo-1.png" alt="Irina Larionova photo" class="feedback__slide-photo">
-                <span class="feedback__slide-name">Ирина Ларионова</span>
-                <span class="feedback__slide-city">Санкт-Петербург</span>
-              </div>
+          <div class="header__utils">
+            <a href="#!" class="header__map-link"
+              >г. Санкт Петербург, ул. Куйбышева 31</a
+            >
+            <div class="header__phone">
+              <a href="tel:88128449549" class="header__phone-link"
+                >8 (812) 844-95-49</a
+              >
+              <p class="header__phone-description">Ежедневно с 9:00 до 20:00</p>
             </div>
           </div>
         </div>
-        <div class="slider-buttons">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-        </div>
-      </div>
-    </section>
-    <section class="gallery">
-      <div class="gallery__container container">
-        <h2 class="section-title gallery__title">Сделали более 3.000 заказов за 2 года</h2>
-        <span class="section-description gallery__description">Посмотрите фото реальных заказов из нашего
-          instagram</span>
-        <div class="gallery__wrapper">
-          <img src="./img/gallery/1.png" alt="" class="gallery__img">
-          <img src="./img/gallery/2.png" alt="" class="gallery__img">
-          <img src="./img/gallery/3.png" alt="" class="gallery__img">
-          <img src="./img/gallery/4.png" alt="" class="gallery__img">
-          <img src="./img/gallery/5.png" alt="" class="gallery__img">
-          <img src="./img/gallery/6.png" alt="" class="gallery__img">
-          <img src="./img/gallery/7.png" alt="" class="gallery__img">
-          <img src="./img/gallery/8.png" alt="" class="gallery__img">
-          <img src="./img/gallery/9.png" alt="" class="gallery__img">
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__container container">
-      <form action="URL_для_отправки_формы" method="post" class="footer__form">
-        <h3 class="footer__title">Чтобы сделать заказ, укажите ваш телефон</h3>
-        <span class="footer__description">Мы перезвоним в течении 15 минут, чтобы уточнить ваши пожелания</span>
-        <div class="footer__form-row">
-          <label for="phone-number" class="footer__form-label visually-hidden">Номер телефона</label>
-          <div class="footer__input-wrapper">
-            <input type="tel" id="phone-number" name="phone-number" class="footer__form-phone"
-              placeholder="Номер телефона" pattern="[0-9]*" maxlength="11" required>
+        <div class="header__content">
+          <div class="header__decoration">вкуснейшие</div>
+          <h1 class="header__title">
+            Пирожные и капкейки от 150 ₽/шт. с доставкой по Санкт Петербургу
+          </h1>
+          <p class="header__description">
+            Приготовим за 3 часа в день заказа. Доставка на авто в холодильнике.
+          </p>
+          <div class="header__content-row">
+            <a href="#!" class="header__button button">Перейти в каталог</a>
+            <p class="header__text">9 различных<br />видов на выбор</p>
           </div>
-          <button type="submit" class="footer__form-button button" aria-label="Отправить номер для заказа">Сделать
-            заказ</button>
         </div>
-        <div class="footer__checkbox-wrapper">
-          <input type="checkbox" id="personal-data" name="personal-data" class="footer__checkbox">
-          <label for="personal-data"></label>
-          <div class="footer__checkbox-text">Нажамая на кнопку, вы соглашаетесь с <a href="#!"
-              class="footer__link">условиями обработки персональных данных</a></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="catalog">
+        <div class="container">
+          <h2 class="catalog__title visually-hidden">
+            Каталог наших капкейков
+          </h2>
+          <div class="catalog__text">Для любых событий и дорогих вам людей</div>
+          <div class="catalog__wrapper">
+            <div class="catalog__card">
+              <img
+                src="./img/catalog/photo-1.webp"
+                alt="фото пироженого Кремовый замок"
+                class="catalog__card-img"
+              />
+              <h3 class="catalog__card-title">Кремовый замок</h3>
+              <p class="catalog__card-description">
+                Нежный крем любого цвета на выбор, вафельная основа
+              </p>
+              <p class="catalog__card-price">150 ₽/шт.</p>
+              <button class="catalog__card-button button">Заказать</button>
+            </div>
+            <div class="catalog__card">
+              <img
+                src="./img/catalog/photo-2.webp"
+                alt="фото пироженого Кремовый замок"
+                class="catalog__card-img"
+              />
+              <h3 class="catalog__card-title">Кремовый замок</h3>
+              <p class="catalog__card-description">
+                Нежный крем любого цвета на выбор, вафельная основа
+              </p>
+              <p class="catalog__card-price">150 ₽/шт.</p>
+              <button class="catalog__card-button button">Заказать</button>
+            </div>
+            <div class="catalog__card">
+              <img
+                src="./img/catalog/photo-3.webp"
+                alt="фото пироженого Кремовый замок"
+                class="catalog__card-img"
+              />
+              <h3 class="catalog__card-title">Кремовый замок</h3>
+              <p class="catalog__card-description">
+                Нежный крем любого цвета на выбор, вафельная основа
+              </p>
+              <p class="catalog__card-price">150 ₽/шт.</p>
+              <button class="catalog__card-button button">Заказать</button>
+            </div>
+            <div class="catalog__card">
+              <img
+                src="./img/catalog/photo-4.webp"
+                alt="фото пироженого Кремовый замок"
+                class="catalog__card-img"
+              />
+              <h3 class="catalog__card-title">Кремовый замок</h3>
+              <p class="catalog__card-description">
+                Нежный крем любого цвета на выбор, вафельная основа
+              </p>
+              <p class="catalog__card-price">150 ₽/шт.</p>
+              <button class="catalog__card-button button">Заказать</button>
+            </div>
+            <div class="catalog__card">
+              <img
+                src="./img/catalog/photo-5.webp"
+                alt="фото пироженого Кремовый замок"
+                class="catalog__card-img"
+              />
+              <h3 class="catalog__card-title">Кремовый замок</h3>
+              <p class="catalog__card-description">
+                Нежный крем любого цвета на выбор, вафельная основа
+              </p>
+              <p class="catalog__card-price">150 ₽/шт.</p>
+              <button class="catalog__card-button button">Заказать</button>
+            </div>
+            <div class="catalog__card">
+              <img
+                src="./img/catalog/photo-6.webp"
+                alt="фото пироженого Кремовый замок"
+                class="catalog__card-img"
+              />
+              <h3 class="catalog__card-title">Кремовый замок</h3>
+              <p class="catalog__card-description">
+                Нежный крем любого цвета на выбор, вафельная основа
+              </p>
+              <p class="catalog__card-price">150 ₽/шт.</p>
+              <button class="catalog__card-button button">Заказать</button>
+            </div>
+            <div class="catalog__card">
+              <img
+                src="./img/catalog/photo-7.webp"
+                alt="фото пироженого Кремовый замок"
+                class="catalog__card-img"
+              />
+              <h3 class="catalog__card-title">Кремовый замок</h3>
+              <p class="catalog__card-description">
+                Нежный крем любого цвета на выбор, вафельная основа
+              </p>
+              <p class="catalog__card-price">150 ₽/шт.</p>
+              <button class="catalog__card-button button">Заказать</button>
+            </div>
+            <div class="catalog__card">
+              <img
+                src="./img/catalog/photo-8.webp"
+                alt="фото пироженого Кремовый замок"
+                class="catalog__card-img"
+              />
+              <h3 class="catalog__card-title">Кремовый замок</h3>
+              <p class="catalog__card-description">
+                Нежный крем любого цвета на выбор, вафельная основа
+              </p>
+              <p class="catalog__card-price">150 ₽/шт.</p>
+              <button class="catalog__card-button button">Заказать</button>
+            </div>
+            <div class="catalog__card">
+              <img
+                src="./img/catalog/photo-9.webp"
+                alt="фото пироженого Кремовый замок"
+                class="catalog__card-img"
+              />
+              <h3 class="catalog__card-title">Кремовый замок</h3>
+              <p class="catalog__card-description">
+                Нежный крем любого цвета на выбор, вафельная основа
+              </p>
+              <p class="catalog__card-price">150 ₽/шт.</p>
+              <button class="catalog__card-button button">Заказать</button>
+            </div>
+          </div>
         </div>
-      </form>
-      <ul class="footer__list">
-        <li class="footer__list-item"><a href="#!" class="footer__list-link">Согласие на обработку данных</a></li>
-        <li class="footer__list-item"><a href="#!" class="footer__list-link">Служба поддержки</a></li>
-        <li class="footer__list-item"><a href="#!" class="footer__list-link">Политика конфиденциальности</a></li>
-      </ul>
-      <span class="footer__text">© <a href="https://nazvaniesaita.ru" class="footer__link">nazvaniesaita.ru</a>, 2054
-        |
-        Название компании или ИП ОГРН 0000000000000</span>
-    </div>
-  </footer>
+      </section>
+      <section class="photo">
+        <div class="photo__container container">
+          <div class="photo__content">
+            <div class="photo__description">не нашли то что нужно?</div>
+            <h2 class="photo__title">
+              Приготовим заказ любой сложности по фото или эскизу
+            </h2>
+            <p class="photo__text">
+              Загрузите фотографию или эскиз капкейков и мы рассчитаем стоимость
+              за 30 минут
+            </p>
+            <button class="photo__button button">Загрузить фотографию</button>
+          </div>
+        </div>
+      </section>
+      <section class="author">
+        <div class="author__container container">
+          <h2 class="author__title visually-hidden">Кто будет готовить?</h2>
+          <div class="author__content">
+            <span class="author__description">Кто будет готовить?</span>
+            <h3 class="author__title">
+              Лично приготовлю<br />и всё красиво упакую для вашего события
+            </h3>
+            <ul class="author__list">
+              <li class="author__item">
+                Проконсультирую по выбору капкейков<br />и придумаю
+                нестандартную идею
+              </li>
+              <li class="author__item">
+                Приготовлю капкейки для вашего события, которые обязательно всем
+                понравятся
+              </li>
+              <li class="author__item">
+                Аккуратно и красиво всё упакую, если вы хотите сделать приятный
+                подарок
+              </li>
+            </ul>
+            <button class="author__button button">Задать вопрос Юлии</button>
+          </div>
+          <div class="author__image-wrapper">
+            <img
+              src="./img/author/author-photo.webp"
+              alt="photo of the pastry chef"
+              class="author__image"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="feedback">
+        <div class="slider-container">
+          <h2 class="section-title feedback__title">
+            Почитайте отзывы довольных клиентов
+          </h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide feedback__slide">
+                <div class="feedback__slide-leftside">
+                  <h3 class="feedback__slide-title">
+                    «Результат дико порадовал, друзья были в восторге»
+                  </h3>
+                  <p class="feedback__slide-text">
+                    «Заказала капкейки, как подарок на новый год. Делать заказ
+                    было легко и приятно, ну а результат дико порадовал, друзья
+                    были в восторге. И оформление, и на вкус капкейки были
+                    просто замечательные. Обязательно буду заказывать еще)) Уже
+                    строю планы, чтобы попробовать все начинки. Они
+                    восхитительны!) Даже кушать было жалко, такая красота!)
+                  </p>
+                  <a href="#!" class="feedback__slide-link">
+                    Читать отзыв полностью
+                  </a>
+                </div>
+                <div class="feedback__slide-rightside">
+                  <img
+                    src="./img/feedback/photo-1.png"
+                    alt="Irina Larionova photo"
+                    class="feedback__slide-photo"
+                  />
+                  <span class="feedback__slide-name">Ирина Ларионова</span>
+                  <span class="feedback__slide-city">Санкт-Петербург</span>
+                </div>
+              </div>
+              <div class="swiper-slide feedback__slide">
+                <div class="feedback__slide-leftside">
+                  <h3 class="feedback__slide-title">
+                    «Результат дико порадовал, друзья были в восторге»
+                  </h3>
+                  <p class="feedback__slide-text">
+                    «Вставьте отзыв целиком или часть отзыва клиента. Никогда не
+                    выдумывайте отзывы самостоятельно. Фильшивые отзывы всегда
+                    видно. Будьте честны.
+                  </p>
+                  <p class="feedback__slide-text">
+                    Опишите конечный результат, который получил человек после
+                    работы с вами. Что конеретно ему это дало. Можно описывать
+                    результат в цифрах, чтобы была конкретика»
+                  </p>
+                  <a href="#!" class="feedback__slide-link">
+                    Читать отзыв полностью
+                  </a>
+                </div>
+                <div class="feedback__slide-rightside">
+                  <img
+                    src="./img/feedback/photo-1.png"
+                    alt="Irina Larionova photo"
+                    class="feedback__slide-photo"
+                  />
+                  <span class="feedback__slide-name">Ирина Ларионова</span>
+                  <span class="feedback__slide-city">Санкт-Петербург</span>
+                </div>
+              </div>
+              <div class="swiper-slide feedback__slide">
+                <div class="feedback__slide-leftside">
+                  <h3 class="feedback__slide-title">
+                    «Результат дико порадовал, друзья были в восторге»
+                  </h3>
+                  <p class="feedback__slide-text">
+                    «Вставьте отзыв целиком или часть отзыва клиента. Никогда не
+                    выдумывайте отзывы самостоятельно. Фильшивые отзывы всегда
+                    видно. Будьте честны.
+                  </p>
+                  <p class="feedback__slide-text">
+                    Опишите конечный результат, который получил человек после
+                    работы с вами. Что конеретно ему это дало. Можно описывать
+                    результат в цифрах, чтобы была конкретика»
+                  </p>
+                  <a href="#!" class="feedback__slide-link">
+                    Читать отзыв полностью
+                  </a>
+                </div>
+                <div class="feedback__slide-rightside">
+                  <img
+                    src="./img/feedback/photo-1.png"
+                    alt="Irina Larionova photo"
+                    class="feedback__slide-photo"
+                  />
+                  <span class="feedback__slide-name">Ирина Ларионова</span>
+                  <span class="feedback__slide-city">Санкт-Петербург</span>
+                </div>
+              </div>
+              <div class="swiper-slide feedback__slide">
+                <div class="feedback__slide-leftside">
+                  <h3 class="feedback__slide-title">
+                    «Результат дико порадовал, друзья были в восторге»
+                  </h3>
+                  <p class="feedback__slide-text">
+                    «Вставьте отзыв целиком или часть отзыва клиента. Никогда не
+                    выдумывайте отзывы самостоятельно. Фильшивые отзывы всегда
+                    видно. Будьте честны.
+                  </p>
+                  <p class="feedback__slide-text">
+                    Опишите конечный результат, который получил человек после
+                    работы с вами. Что конеретно ему это дало. Можно описывать
+                    результат в цифрах, чтобы была конкретика»
+                  </p>
+                  <a href="#!" class="feedback__slide-link">
+                    Читать отзыв полностью
+                  </a>
+                </div>
+                <div class="feedback__slide-rightside">
+                  <img
+                    src="./img/feedback/photo-1.png"
+                    alt="Irina Larionova photo"
+                    class="feedback__slide-photo"
+                  />
+                  <span class="feedback__slide-name">Ирина Ларионова</span>
+                  <span class="feedback__slide-city">Санкт-Петербург</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-buttons">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery">
+        <div class="gallery__container container">
+          <h2 class="section-title gallery__title">
+            Сделали более 3.000 заказов за 2 года
+          </h2>
+          <span class="section-description gallery__description"
+            >Посмотрите фото реальных заказов из нашего instagram</span
+          >
+          <div class="gallery__wrapper">
+            <img src="./img/gallery/1.png" alt="" class="gallery__img" />
+            <img src="./img/gallery/2.png" alt="" class="gallery__img" />
+            <img src="./img/gallery/3.png" alt="" class="gallery__img" />
+            <img src="./img/gallery/4.png" alt="" class="gallery__img" />
+            <img src="./img/gallery/5.png" alt="" class="gallery__img" />
+            <img src="./img/gallery/6.png" alt="" class="gallery__img" />
+            <img src="./img/gallery/7.png" alt="" class="gallery__img" />
+            <img src="./img/gallery/8.png" alt="" class="gallery__img" />
+            <img src="./img/gallery/9.png" alt="" class="gallery__img" />
+          </div>
+        </div>
+      </section>
+    </main>
 
-  <!-- scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./js/main.js"></script>
+    <footer class="footer">
+      <div class="footer__container container">
+        <form
+          action="URL_для_отправки_формы"
+          method="post"
+          class="footer__form"
+        >
+          <h3 class="footer__title">
+            Чтобы сделать заказ, укажите ваш телефон
+          </h3>
+          <span class="footer__description"
+            >Мы перезвоним в течении 15 минут, чтобы уточнить ваши
+            пожелания</span
+          >
+          <div class="footer__form-row">
+            <label for="phone-number" class="footer__form-label visually-hidden"
+              >Номер телефона</label
+            >
+            <div class="footer__input-wrapper">
+              <input
+                type="tel"
+                id="phone-number"
+                name="phone-number"
+                class="footer__form-phone"
+                placeholder="Номер телефона"
+                pattern="[0-9]*"
+                maxlength="11"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              class="footer__form-button button"
+              aria-label="Отправить номер для заказа"
+            >
+              Сделать заказ
+            </button>
+          </div>
+          <div class="footer__checkbox-wrapper">
+            <input
+              type="checkbox"
+              id="personal-data"
+              name="personal-data"
+              class="footer__checkbox"
+            />
+            <label for="personal-data"></label>
+            <div class="footer__checkbox-text">
+              Нажамая на кнопку, вы соглашаетесь с
+              <a href="#!" class="footer__link"
+                >условиями обработки персональных данных</a
+              >
+            </div>
+          </div>
+        </form>
+        <ul class="footer__list">
+          <li class="footer__list-item">
+            <a href="#!" class="footer__list-link"
+              >Согласие на обработку данных</a
+            >
+          </li>
+          <li class="footer__list-item">
+            <a href="#!" class="footer__list-link">Служба поддержки</a>
+          </li>
+          <li class="footer__list-item">
+            <a href="#!" class="footer__list-link"
+              >Политика конфиденциальности</a
+            >
+          </li>
+        </ul>
+        <span class="footer__text"
+          >©
+          <a href="https://nazvaniesaita.ru" class="footer__link"
+            >nazvaniesaita.ru</a
+          >, 2054 | Название компании или ИП ОГРН 0000000000000</span
+        >
+      </div>
+    </footer>
 
-</body>
-
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

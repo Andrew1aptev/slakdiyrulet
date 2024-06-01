@@ -246,7 +246,7 @@ body {
 .header {
   padding-top: 39px;
   padding-bottom: 465px;
-  background-image: url("./../img/hero/bg.png");
+  background-image: url("./../img/header/bg.webp");
   background-position: center center; /* x y */
   background-size: cover;
   background-repeat: no-repeat;
@@ -308,7 +308,7 @@ body {
   left: -30px;
   width: 17px;
   height: 23px;
-  background-image: url("./../../img/hero/map-icon.svg");
+  background-image: url("./../img/header/map-icon.svg");
   background-position: center center; /* x y */
   background-size: cover;
   background-repeat: no-repeat;
@@ -329,7 +329,7 @@ body {
   left: -30px;
   width: 19px;
   height: 19px;
-  background-image: url("./../../img/hero/phone-icon.svg");
+  background-image: url("./../img/header/phone-icon.svg");
   background-position: center center; /* x y */
   background-size: cover;
   background-repeat: no-repeat;
@@ -496,7 +496,7 @@ body {
   padding-bottom: 459px;
   background-color: var(--blue-dark-color);
   position: relative;
-  background-image: url("./../img/photo/bg-photo.png");
+  background-image: url("./../img/photo/bg-photo.webp");
   background-position: center center; /* x y */
   background-size: cover;
   background-repeat: no-repeat;
@@ -512,7 +512,7 @@ body {
 
 .photo::before {
   content: "";
-  background-image: url("./../img/photo/hand.png");
+  background-image: url("./../img/photo/hand.webp");
   background-position: center center; /* x y */
   background-size: cover;
   background-repeat: no-repeat;
@@ -581,7 +581,8 @@ body {
 }
 
 @media only screen and (max-width: 1023px) {
-  .photo__title, .photo__text {
+  .photo__title,
+  .photo__text {
     text-align: center;
   }
 }
@@ -744,7 +745,7 @@ body {
   top: 0;
   width: 100%;
   height: 330px;
-  background-image: url("./../img/feedback/clouds-top.png");
+  background-image: url("./../img/feedback/clouds-top.webp");
   background-position: center center; /* x y */
   background-size: cover;
   background-repeat: no-repeat;
@@ -756,7 +757,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 284px;
-  background-image: url("./../img/feedback/clouds-bottom.png");
+  background-image: url("./../img/feedback/clouds-bottom.webp");
   background-position: center center; /* x y */
   background-size: cover;
   background-repeat: no-repeat;
@@ -1052,7 +1053,7 @@ body {
   top: 0;
   width: 100%;
   height: 284px;
-  background-image: url("./../img/footer/clouds-footer.png");
+  background-image: url("./../img/footer/clouds-footer.webp");
   background-position: center center; /* x y */
   background-size: cover;
   background-repeat: no-repeat;
@@ -1194,7 +1195,8 @@ body {
   }
 }
 @media only screen and (max-width: 1024px) {
-  .footer__form::after, .footer__form::before {
+  .footer__form::after,
+  .footer__form::before {
     height: 700px;
   }
   .footer__form-row {
